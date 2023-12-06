@@ -1,23 +1,16 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": ["pip install -r requirements.txt"],
+  "setupTasks": ["echo 'Please check hellogradiocomponent directory.'"],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "start": {
       "name": "start",
-      "command": "python main.py",
-      "runAtStart": true,
-      "restartOn": {
-        "files": ["main.py"]
-      }
-    },
-    "install-dependencies": {
-      "name": "Installing Dependencies",
-      "command": "pip install -r requirements.txt",
-      "restartOn": {
-        "files": ["requirements.txt"]
-      }
-    }
+      "command": "pip install gradio",
+      "runAtStart": true
+  },
+  "install-dependencies": {
+    "name": "Installing Dependencies",
+    "command": "apt install node npm -y"
   }
 }

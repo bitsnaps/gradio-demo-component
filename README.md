@@ -1,5 +1,7 @@
 # Gradio Demo to build a Custom Component
 
+The following instructions are made to build/install a gradio custom component on [Codesandbox](https://codesandbox.io/).
+
 ## Install dependencies
 Make sure to have the following depdencies:
 - Python 3 & pip
