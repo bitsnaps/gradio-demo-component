@@ -6,11 +6,21 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "pip install gradio",
-      "runAtStart": true
-  },
+      "command": "gradio cc --help",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "Build component",
+      "command": "gradio cc build",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "Test component",
+      "command": "gradio cc dev",
+      "runAtStart": false
+    },
   "install-dependencies": {
     "name": "Installing Dependencies",
-    "command": "cd hellogradiocomponent && gradio cc build"
+    "command": "pip install gradio"
   }
 }
