@@ -3,7 +3,7 @@
 ## Install dependencies
 Make sure to have the following depdencies:
 - Python 3 & pip
-- Node & npm (recent)
+- Node v16.14+ & npm v9+ 
 If you're using a ubuntu you can install node and npm using:
 ```
 apt install node npm
