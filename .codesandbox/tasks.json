@@ -1,8 +1,8 @@
 {
-  // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": ["echo 'Please check hellogradiocomponent directory.'"],
-
-  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "setupTasks": [
+    "echo 'These tasks will run in order when initializing your CodeSandbox project'",
+    "apt install node npm -y"
+  ],
   "tasks": {
     "start": {
       "name": "start",
@@ -11,6 +11,6 @@
   },
   "install-dependencies": {
     "name": "Installing Dependencies",
-    "command": "apt install node npm -y"
+    "command": "cd hellogradiocomponent && gradio cc build"
   }
 }
